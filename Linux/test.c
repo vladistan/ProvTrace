@@ -1,17 +1,10 @@
-#include <sys/types.h>
-#include <sys/stat.h>
 #include <stdio.h>
-#include <fcntl.h>
+#include <dlfcn.h>
 
-void main ()
+int main()
 {
-  char xxxx[2222];
+    void* handle;
 
-  int h = open ( "bb" , O_RDONLY );
-  
-  read(h,xxxx,22);
-  
-
-  printf ( "Got %s \n" , xxxx );
-  
+    open( "12345", 12 );
+    handle = dlopen( "somefile", 0 );
 }

@@ -1,0 +1,7 @@
+*.swp
+*.o
+*.so
+Linux/test
+Mac/*.dylib
+.vagrant
+Berksfile.lock
